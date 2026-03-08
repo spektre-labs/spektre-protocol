@@ -180,43 +180,6 @@ It provides a **unifying structural abstraction** across them.
 
 ---
 
-## Design & Execution
-
-Spektre is **protocol**, not runtime.
-
-Execution occurs in the Genesis layer:
-
-- **Spektri-Genesis (execution substrate):**  
-  https://github.com/nuoriharka/spektri-genesis
-
-Protocol defines constraints.  
-Genesis instantiates behavior.
-
----
-
-## Supplementary Materials (Non-Normative)
-
-Contextual essays and explorations exist **alongside** the protocol.
-They are not part of the formal model.
-
-- 📁 System Architecture / Singularity Essays  
-  https://drive.google.com/drive/folders/1lYfmRy6cHj5U8zaAeEoa-M2L1Qzsstuj
-
-- 📁 Cognitive & Human-Layer Essays  
-  https://drive.google.com/drive/folders/10eE4cmF0JaIeea6_rvM4IeWNS8onmAaM
-  
-- 📁 Technology & System Essays (ENGLISH)
-  https://drive.google.com/drive/folders/1m3yMC5Ye0-MzORr7eBlHCFfCxfLXYeDX
----
-
-## Design Definition
-
-- **DESIGN.md**  
-  Design is not aesthetics.  
-  Design is behavior.
-
----
-
 ## License
 
 Apache-2.0
@@ -225,7 +188,7 @@ Apache-2.0
 
 ## Attribution
 
-**Author:** Lauri Elias Rainio-Poduskin  
+**Author:** Lauri Elias Rainio  
 **Role:** Independent Systems Architect  
 
 I do not optimize for visibility.  
