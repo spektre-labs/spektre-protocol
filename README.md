@@ -1,201 +1,115 @@
-# SPEKTRE v1.1  
-## A Formal Protocol for Dynamic State Spaces
+# Spektre Repository
 
-**Status:** Locked formal specification  
-**Scope:** Structural modeling of expressive capacity and state-space hierarchies  
-**Language:** Mathematics, systems theory  
+This repository is the conceptual archive of the Spektre ecosystem.
 
----
+At its center is `Spektre v1.1`: a formal state-first protocol concerned with invariants, boundaries, state ownership, commitment, and responsibility. But the repository is broader than that formal layer. It also contains system models, execution logic, human-layer documents, AI and substrate-boundary material, domain essays, exploratory conceptual texts, and preserved archival strata.
 
-## Overview
+So this is not a conventional software project, and it is not only a single formal theory. It is a layered document system: part protocol corpus, part systems archive, part research and exploration space.
 
-**Spektre v1.1** is a **state-first protocol** for reasoning about systems whose failures emerge *before* interpretation, optimization, or learning.
+## What Spektre v1.1 Is Within This Repository
 
-It formalizes how **expressive capacity** increases as systems move from:
-simple scalar representations to higher-order operator spaces.
+`Spektre v1.1` is the protocol core.
 
-This repository defines **structure only**.
+It defines the strongest invariant layer of the repository:
 
-It does **not** describe:
-- experience
-- cognition
-- identity
-- psychology
-- metaphysics
+- `1 = 1` as the cross-cutting consistency constraint
+- state before interpretation
+- explicit ownership before action
+- commitment as irreversible transition
+- human responsibility as non-delegable
 
-Any such interpretations are explicitly out of scope.
+That layer now lives primarily in `protocol_core/` and `formal_structure/`.
 
----
+The rest of the repository is not noise around the protocol. It is the wider idea-space in which the protocol is clarified, tested against domains, extended into models, applied to human conditions, or preserved as exploratory and archival material.
 
-## Versioning & Stability
+## What Else This Repository Contains
 
-Spektre v1.1 is **locked**.
+Beyond the protocol core, the repository includes:
 
-- No retroactive changes  
-- No reinterpretations  
-- No semantic drift  
+- formal and architectural framing of state-space and system logic
+- execution-layer documents about gateways, filters, control, runtime, and stabilization
+- human-layer texts on regulation, recovery, integration, relationships, trauma, and meaning
+- AI/interface material on AGI, LLMs, substrate differences, and human-tool boundaries
+- applied protocol modules for transitions, silence, repair, and action gating
+- essays that extend the invariant language into health, learning, economy, infrastructure, and culture
+- exploratory documents that remain useful but are not part of the smallest canonical nucleus
+- archival material that preserves older, parallel, historical, or speculative branches
 
-Future versions, if any, may introduce **new layers** without modifying v1.1.
+## Repository Structure
 
----
+The repository is organized by layer rather than by chronology.
 
-## Purpose
+- `protocol_core/`: canonical core, canons, invariants, and reference boundaries
+- `formal_structure/`: formalism, architecture, state-space, limits, and system models
+- `execution_system/`: kernel, engine, gateway, filter, diagnostics, and runtime logic
+- `human_layer/`: regulation, recovery, integration, relationships, and meaning
+- `ai_interface/`: AGI, model behavior, substrate comparison, and human-tool boundary texts
+- `applied_protocols/`: practical protocol modules and transition patterns
+- `essays/`: domain-extension texts, now grouped by theme
+- `explorations/`: conceptual, symbolic, social, and systems-adjacent exploratory documents
+- `archive/`: legacy, parallel, speculative, and preserved historical material
+- `docs/`: navigation, maps, reading paths, diagrams, and reorganization summaries
 
-Spektre provides a clean mathematical lens for reasoning about:
+## Essay Domains
 
-- Hierarchies of state spaces  
-- Limits of expressibility  
-- Operator-of-operator structures  
-- Failure modes caused by insufficient representational space  
+The essay layer is now internally grouped into:
 
-It is concerned with **expressivity**, not:
-performance, optimization, learning, or empirical fitting.
+- `essays/health_biology/`
+- `essays/learning_work/`
+- `essays/economy_access/`
+- `essays/culture_society/`
+- `essays/infrastructure_environment/`
 
----
+This makes the broader applied layer easier to navigate without collapsing it into the protocol core.
 
-## Core Invariant
+## True Entry Canon
 
-**1 = 1**
+If this repository had to be entered through only ten documents, these are the strongest starting points:
 
-All formal reasoning assumes:
-- explicit state ownership
-- non-contradictory commitments
-- coherent consequence propagation
+1. `protocol_core/canons/CANON_INDEX.md`
+2. `protocol_core/core/1=1.md`
+3. `protocol_core/core/PROTOCOL.md`
+4. `protocol_core/core/UNITY.md`
+5. `protocol_core/core/SOVEREIGN_AGENCY.md`
+6. `protocol_core/core/STATE_BEFORE_INTERPRETATION.md`
+7. `protocol_core/core/STATE_COMMIT.md`
+8. `formal_structure/system_models/SYSTEM_OVERVIEW.md`
+9. `execution_system/core/SUPERKERNEL.md`
+10. `human_layer/relationships/HUMAN_NETWORK.md`
 
----
+These ten do not cover the whole repository, but they expose its center of gravity: invariant, protocol, structure, execution, and human meaning-preservation.
 
-## Base Space
+## How To Read This Repository
 
-We begin with the real numbers:
+Do not try to read it as a linear book.
+Read it by entry layer.
 
-X₀ := ℝ
+If you want the protocol nucleus first:
 
-- Cardinality: |X₀| = 𝔠  
-- Interpretation: a continuous scalar state space  
+- start with `protocol_core/canons/CANON_INDEX.md`
+- continue into `protocol_core/core/`
+- then read `formal_structure/`
 
-Models systems with a single continuous degree of freedom.
+If you want the systems view first:
 
----
+- start with `formal_structure/system_models/SYSTEM_OVERVIEW.md`
+- continue into `formal_structure/formalism/`
+- then read `execution_system/`
 
-## Finite-Dimensional Extension
+If you want the human layer first:
 
-For any finite \( n \in \mathbb{N} \):
+- start with `human_layer/relationships/HUMAN_NETWORK.md`
+- continue into `human_layer/regulation/`, `human_layer/integration/`, and `human_layer/meaning/`
 
-Xₙ := ℝⁿ
+If you want a repository-level map first:
 
-**Properties**
-- Increased dimensionality  
-- Constant cardinality |ℝⁿ| = 𝔠  
+- read `docs/INDEX.md`
+- then `docs/REPO_MAP.md`
+- then `docs/READING_PATH.md`
 
-**Interpretation**
-- Classical state spaces  
-- Configuration vectors  
-- Control variables  
+## Orientation Notes
 
----
-
-## Countable Function Space
-
-X_ℕ := ℝ^ℕ
-
-**Properties**
-- Infinite-dimensional vector space  
-- Cardinality remains |ℝ^ℕ| = 𝔠  
-
-**Interpretation**
-- Time series  
-- Signals  
-- Trajectories  
-- Infinite-horizon processes  
-
-Infinite dimension alone does **not** guarantee unlimited expressivity.
-
----
-
-## Uncountable Function Space
-
-X_ℝ := ℝ^ℝ
-
-**Cardinality**
-|ℝ^ℝ| = 2^𝔠 > 𝔠
-
-This represents a **qualitative jump** in expressive capacity.
-
-**Interpretation**
-- Space of all transformations  
-- Operators on continuous spaces  
-- Hypothesis spaces beyond parametric models  
-
-This is not “more data”, but **more possible mappings**.
-
----
-
-## Iterative Construction (Spektre Stack)
-
-We define a recursive hierarchy:
-
-Xₖ₊₁ := ℝ^{Xₖ}
-
-This yields a strictly increasing cardinal sequence:
-
-|X₀| < |X₁| < |X₂| < …
-
-Each level represents:
-- operators acting on operators
-- transformations of transformation spaces
-- higher-order model classes
-
-This formalizes **vertical expressivity**, not horizontal scaling.
-
-No assumptions are made about computability, continuity,
-or measurability unless stated in future extensions.
-
----
-
-## What Spektre Is Not
-
-Spektre v1.1 does **not**:
-- model mental states
-- define agency or identity
-- make medical or psychological claims
-- propose metaphysical interpretations
-
-Structure is defined.  
-Meaning is external.
-
----
-
-## Relation to Existing Fields
-
-Similar structures appear in:
-- Functional analysis  
-- Category theory  
-- Operator algebras  
-- Control theory  
-- Dynamical systems  
-- Machine learning hypothesis spaces  
-
-Spektre does not replace these fields.
-It provides a **unifying structural abstraction** across them.
-
----
-
-## License
-
-Apache-2.0
-
----
-
-## Attribution
-
-**Author:** Lauri Elias Rainio  
-**Role:** Independent Systems Architect  
-
-I do not optimize for visibility.  
-I optimize for correctness.
-
-**1 = 1**
-
-— Spektre Protocol v1.1
-
-
+- The previous protocol-centered root `README.md` was preserved as `protocol_core/reference/README_SPEKTRE_V1_1.md`.
+- Canonical and exploratory documents are both intentionally retained.
+- The purpose of the current structure is not reduction or cleanup for its own sake.
+- The purpose is to make the layers visible without collapsing the idea-space.
