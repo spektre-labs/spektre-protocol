@@ -9,7 +9,7 @@ Guidance for autonomous coding tools (Cursor, Copilot, etc.) working **in this t
 
 ## Evidence hygiene (non-negotiable)
 
-1. Read [docs/CLAIM_DISCIPLINE.md](docs/CLAIM_DISCIPLINE.md) before editing benchmark prose or numbers.
+1. Read [docs/CLAIM_DISCIPLINE.md](docs/CLAIM_DISCIPLINE.md) before editing benchmark prose or numbers; for thesis-level scope and non-goals read [docs/RESEARCH_AND_THESIS_ARCHITECTURE.md](docs/RESEARCH_AND_THESIS_ARCHITECTURE.md).
 2. Never merge **microbench throughput** with **harness MMLU / ARC** in a single headline sentence.
 3. **Arithmetic ratios** (192× ops, 32× RAM) in the README follow from the stated `D=4096` encodings; **throughput** requires `make bench` + archived host metadata ([docs/REPRO_BUNDLE_TEMPLATE.md](docs/REPRO_BUNDLE_TEMPLATE.md)).
 

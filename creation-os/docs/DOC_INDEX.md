@@ -10,6 +10,7 @@ Single entry point for humans and automation. **All committed prose here is Engl
 | [CONTRIBUTING.md](../CONTRIBUTING.md) | Contributors | Build, PR hygiene, license headers |
 | [SECURITY.md](../SECURITY.md) | Reporters | Vulnerability reporting |
 | [AGENTS.md](../AGENTS.md) | Coding agents / Copilot | Evidence-class rules, scope |
+| [RESEARCH_AND_THESIS_ARCHITECTURE.md](RESEARCH_AND_THESIS_ARCHITECTURE.md) | Dissertation, safety, systems reviewers | RQs, contributions C1–C6, methodology, threats, thesis chapter outline |
 | [CLAIM_DISCIPLINE.md](CLAIM_DISCIPLINE.md) | Authors, reviewers | Evidence classes, forbidden merges, falsifiers |
 | [EXTERNAL_EVIDENCE_AND_POSITIONING.md](EXTERNAL_EVIDENCE_AND_POSITIONING.md) | Papers, investors | Kanerva / VSA survey / lm-eval anchors |
 | [HDC_VSA_ENGINEERING_SUPERIORITY.md](HDC_VSA_ENGINEERING_SUPERIORITY.md) | Strategy, decks | Literature-backed HDC vs NN trade-offs + FAISS Hamming note + repo bridge |

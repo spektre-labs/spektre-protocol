@@ -70,6 +70,8 @@ This document is the line between them.
 
 For **bibliography-ready** links and a short “what the field already agrees on vs what this git tree proves” table, see **[EXTERNAL_EVIDENCE_AND_POSITIONING.md](EXTERNAL_EVIDENCE_AND_POSITIONING.md)**.
 
+For **research questions, contribution list, threats to validity, and a suggested dissertation chapter outline**, see **[RESEARCH_AND_THESIS_ARCHITECTURE.md](RESEARCH_AND_THESIS_ARCHITECTURE.md)**.
+
 ---
 
 *Spektre Labs · Creation OS · 2026*
