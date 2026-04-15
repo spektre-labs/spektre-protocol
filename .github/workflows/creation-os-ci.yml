@@ -10,6 +10,10 @@ on:
       - 'creation-os/**'
       - '.github/workflows/creation-os-ci.yml'
 
+concurrency:
+  group: creation-os-monorepo-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 defaults:
   run:
     working-directory: creation-os
@@ -20,5 +24,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Structural build and tests
-        run: make check
+      - name: Merge gate (portable + v6..v26 self-tests)
+        run: make merge-gate

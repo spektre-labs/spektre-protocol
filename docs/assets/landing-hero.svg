@@ -1,26 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="t d">
-  <title id="t">Spektre  protocol archive and Creation OS</title>
-  <desc id="d">Dark gradient banner with 1 equals 1 and layer hints</desc>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" role="img" aria-labelledby="lh-title lh-desc">
+  <title id="lh-title">Spektre protocol archive and Creation OS kernel</title>
+  <desc id="lh-desc">Instrument-style hero: 1 equals 1, layer stack, grid, corner index marks, telemetry strip. Original artwork; not affiliated with any space agency.</desc>
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#050a14"/>
-      <stop offset="45%" style="stop-color:#0c1830"/>
-      <stop offset="100%" style="stop-color:#0a2048"/>
+    <linearGradient id="lh-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="38%" stop-color="#0b1628"/>
+      <stop offset="100%" stop-color="#0c2850"/>
     </linearGradient>
-    <linearGradient id="glow" x1="0%" y1="50%" x2="100%" y2="50%">
-      <stop offset="0%" style="stop-color:#1e50a0;stop-opacity:0"/>
-      <stop offset="50%" style="stop-color:#3d7af0;stop-opacity:0.35"/>
-      <stop offset="100%" style="stop-color:#1e50a0;stop-opacity:0"/>
+    <linearGradient id="lh-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="45%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
     </linearGradient>
+    <pattern id="lh-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#38bdf8" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="lh-glow" cx="50%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="lh-soft" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+    <clipPath id="lh-clip">
+      <rect width="1200" height="400" rx="16"/>
+    </clipPath>
   </defs>
-  <rect width="1200" height="360" fill="url(#bg)"/>
-  <rect width="1200" height="360" fill="url(#glow)"/>
-  <g opacity="0.12" stroke="#4a7ad4" stroke-width="1" fill="none">
-    <path d="M0 120 L1200 80 M0 240 L1200 200 M200 0 L160 360 M600 0 L520 360 M1000 0 L880 360"/>
+  <g clip-path="url(#lh-clip)">
+    <rect width="1200" height="400" fill="url(#lh-bg)"/>
+    <rect width="1200" height="400" fill="url(#lh-grid)"/>
+    <rect width="1200" height="400" fill="url(#lh-glow)"/>
   </g>
-  <text x="600" y="158" text-anchor="middle" font-family="ui-sans-serif,system-ui,sans-serif" font-size="82" font-weight="700" fill="#1e50a0" opacity="0.45">1 = 1</text>
-  <text x="600" y="155" text-anchor="middle" font-family="ui-sans-serif,system-ui,sans-serif" font-size="78" font-weight="700" fill="#f4f8ff">1 = 1</text>
-  <text x="600" y="210" text-anchor="middle" font-family="ui-sans-serif,system-ui,sans-serif" font-size="22" fill="#8fb4e8" letter-spacing="0.08em">SPEKTRE ù STATE-FIRST PROTOCOL ù CREATION OS KERNEL</text>
-  <text x="600" y="255" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="15" fill="#6a90c8">protocol_core ù formal_structure ù execution_system ù human_layer ù creation-os/</text>
-  <rect x="40" y="300" width="1120" height="3" fill="url(#glow)" opacity="0.6"/>
+  <rect x="0" y="0" width="1200" height="5" rx="16" fill="url(#lh-accent)"/>
+  <g stroke="#7dd3fc" stroke-width="1.25" fill="none" opacity="0.55">
+    <path d="M18 28 L18 12 L34 12"/>
+    <path d="M1182 28 L1182 12 L1166 12"/>
+    <path d="M18 372 L18 388 L34 388"/>
+    <path d="M1182 372 L1182 388 L1166 388"/>
+  </g>
+  <text x="44" y="34" fill="#94a3b8" font-family="ui-monospace,Menlo,monospace" font-size="10" font-weight="600" letter-spacing="0.14em">FIG 01 / ARCHIVE DISPLAY</text>
+  <text x="1156" y="34" text-anchor="end" fill="#64748b" font-family="ui-monospace,Menlo,monospace" font-size="9" letter-spacing="0.08em">REV A / VECTOR</text>
+  <text x="600" y="178" text-anchor="middle" font-family="ui-sans-serif,system-ui,sans-serif" font-size="88" font-weight="800" fill="#1e3a8a" opacity="0.32">1 = 1</text>
+  <text x="600" y="174" text-anchor="middle" font-family="ui-sans-serif,system-ui,sans-serif" font-size="84" font-weight="800" fill="#f8fafc" filter="url(#lh-soft)">1 = 1</text>
+  <text x="600" y="226" text-anchor="middle" fill="#94a3b8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12" font-weight="600" letter-spacing="0.26em">SPEKTRE / STATE-FIRST PROTOCOL / CREATION OS KERNEL</text>
+  <text x="600" y="262" text-anchor="middle" fill="#7dd3fc" font-family="ui-monospace,Menlo,monospace" font-size="13">protocol_core / formal_structure / execution_system / human_layer / creation-os/</text>
+  <rect x="48" y="286" width="1104" height="1" fill="url(#lh-accent)" opacity="0.5"/>
+  <rect x="0" y="318" width="1200" height="82" fill="#020617" fill-opacity="0.88"/>
+  <line x1="0" y1="318" x2="1200" y2="318" stroke="#334155" stroke-width="1"/>
+  <text x="48" y="348" fill="#64748b" font-family="ui-monospace,Menlo,monospace" font-size="10" letter-spacing="0.06em">MODE=REFERENCE</text>
+  <text x="48" y="368" fill="#64748b" font-family="ui-monospace,Menlo,monospace" font-size="10" letter-spacing="0.06em">VERIFY=creation-os dir then make merge-gate</text>
+  <text x="48" y="388" fill="#475569" font-family="ui-monospace,Menlo,monospace" font-size="9">ASSET=docs/assets/landing-hero.svg | SPEKTRE LABS | NOT FLIGHT / NOT CERTIFIED SW</text>
+  <text x="1152" y="368" text-anchor="end" fill="#22d3ee" font-family="ui-monospace,Menlo,monospace" font-size="10" font-weight="600">DISPLAY OK</text>
 </svg>

@@ -2,13 +2,19 @@
   <img src="docs/assets/landing-hero.svg" width="100%" alt="Spektre — 1 = 1 · protocol archive · Creation OS kernel"/>
 </p>
 
+<p align="center">
+  <a href="https://github.com/spektre-labs/spektre-protocol"><img src="https://img.shields.io/badge/repo-spektre--protocol-0f172a?style=for-the-badge" alt="repo"/></a>
+  <img src="https://img.shields.io/badge/docs-INDEX-1e40af?style=for-the-badge" alt="docs"/>
+  <img src="https://img.shields.io/badge/kernel-creation--os-0e7490?style=for-the-badge" alt="Creation OS"/>
+</p>
+
 ---
 
 > **Landed from Reddit (or anywhere else)?** Read this once: this monorepo is **not** “yet another ML wrapper.” It is **(A)** a formal **state-first protocol** (*Spektre v1.1* — invariants, ownership, commitment) and **(B)** a **portable C kernel** inside [`creation-os/`](creation-os/README.md) where **`1 = 1` is enforced in code**, not vibes. Pick one door below — you can always take the other later.
 
 | I want… | Go here first |
 |--------|-----------------|
-| **Runnable demos, σ, BSC, `make check-v16`** | [**Creation OS README →**](creation-os/README.md) |
+| **Runnable demos, σ, BSC, `make check-v26`** | [**Creation OS README →**](creation-os/README.md) |
 | **The invariant story (`1 = 1`, protocol core)** | [`protocol_core/core/1=1.md`](protocol_core/core/1=1.md) → [`protocol_core/canons/CANON_INDEX.md`](protocol_core/canons/CANON_INDEX.md) |
 | **A map of the whole archive** | [`docs/INDEX.md`](docs/INDEX.md) · [`docs/REPO_MAP.md`](docs/REPO_MAP.md) |
 
@@ -18,6 +24,16 @@ flowchart LR
   B -->|Shippable C + tests| C[creation-os/README.md]
   B -->|Formal protocol| D[protocol_core/core/1=1.md]
   B -->|Big picture| E[docs/INDEX.md]
+```
+
+---
+
+## Creation OS merge gate
+
+Changes under [`creation-os/`](creation-os/) are validated in CI with **`make merge-gate`**: the portable **`creation_os`** build and tests, plus every flagship **`creation_os_v6.c` … `creation_os_v26.c`** `--self-test` chain (through **204** checks on the current head). From a clone of this monorepo:
+
+```bash
+cd creation-os && make merge-gate
 ```
 
 ---

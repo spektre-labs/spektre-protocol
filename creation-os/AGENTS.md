@@ -2,6 +2,11 @@
 
 Guidance for autonomous coding tools (Cursor, Copilot, etc.) working **in this tree**.
 
+## Canonical Git (non-negotiable)
+
+- **Only** [spektre-labs/creation-os](https://github.com/spektre-labs/creation-os) on GitHub is the real Creation OS remote. Read **[docs/CANONICAL_GIT_REPOSITORY.md](docs/CANONICAL_GIT_REPOSITORY.md)**.
+- **Never** add that URL as `origin` on a parent “protocol” / umbrella monorepo, and **never** `git push` Creation OS from outside the Creation OS repo root. Use a normal clone of `creation-os` or `make publish-github` from **this** tree’s root (`creation_os_v2.c` present).
+
 ## Language
 
 - **Canonical policy:** [docs/LANGUAGE_POLICY.md](docs/LANGUAGE_POLICY.md) — **English only** for all committed prose and new maintainer-facing comments.
@@ -9,13 +14,13 @@ Guidance for autonomous coding tools (Cursor, Copilot, etc.) working **in this t
 
 ## Evidence hygiene (non-negotiable)
 
-1. Read [docs/CLAIM_DISCIPLINE.md](docs/CLAIM_DISCIPLINE.md) before editing benchmark prose or numbers; for thesis-level scope and non-goals read [docs/RESEARCH_AND_THESIS_ARCHITECTURE.md](docs/RESEARCH_AND_THESIS_ARCHITECTURE.md).
+1. Read [docs/CLAIM_DISCIPLINE.md](docs/CLAIM_DISCIPLINE.md) before editing benchmark prose or numbers; for thesis-level scope and non-goals read [docs/RESEARCH_AND_THESIS_ARCHITECTURE.md](docs/RESEARCH_AND_THESIS_ARCHITECTURE.md). When editing dissertation-facing prose, follow the ordered **doctoral read path** in [README.md](README.md#doctoral-and-committee-read-path) so v6–v12 stay **Lab demo (C)** and never substitute for harness, silicon, or quantum claims.
 2. Never merge **microbench throughput** with **harness MMLU / ARC** in a single headline sentence.
 3. **Arithmetic ratios** (192× ops, 32× RAM) in the README follow from the stated `D=4096` encodings; **throughput** requires `make bench` + archived host metadata ([docs/REPRO_BUNDLE_TEMPLATE.md](docs/REPRO_BUNDLE_TEMPLATE.md)).
 
 ## What to optimize for
 
-- **Correctness:** `make test` must pass. If you edit [`creation_os_v6.c`](../creation_os_v6.c), [`creation_os_v7.c`](../creation_os_v7.c), [`creation_os_v9.c`](../creation_os_v9.c), or [`creation_os_v10.c`](../creation_os_v10.c), also run **`make check-v6`**, **`make check-v7`**, **`make check-v9`**, or **`make check-v10`** respectively (Living Kernel, Hallucination Killer, Parameters in Silicon, The Real Mind self-tests).
+- **Correctness:** before merge, run **`make merge-gate`** from this directory (portable `check` + every flagship **`check-v6` … `check-v26`** self-test matrix). For a tight loop while editing one file, `make test` and the matching **`make check-vN`** alone are acceptable until the final commit.
 - **Portability:** Prefer C11 + libm; optional `-march=native` is Makefile default — document if you change it.
 - **Minimal diffs:** Do not refactor unrelated modules; match existing style.
 
