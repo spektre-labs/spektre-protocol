@@ -1,123 +1,106 @@
-# Spektre Repository
+<p align="center">
+  <img src="docs/assets/landing-hero.svg" width="100%" alt="Spektre — 1 = 1 · protocol archive · Creation OS kernel"/>
+</p>
 
-This repository is the conceptual archive of the Spektre ecosystem.
+---
 
-At its center is `Spektre v1.1`: a formal state-first protocol concerned with invariants, boundaries, state ownership, commitment, and responsibility. But the repository is broader than that formal layer. It also contains system models, execution logic, human-layer documents, AI and substrate-boundary material, domain essays, exploratory conceptual texts, and preserved archival strata.
+> **Landed from Reddit (or anywhere else)?** Read this once: this monorepo is **not** “yet another ML wrapper.” It is **(A)** a formal **state-first protocol** (*Spektre v1.1* — invariants, ownership, commitment) and **(B)** a **portable C kernel** inside [`creation-os/`](creation-os/README.md) where **`1 = 1` is enforced in code**, not vibes. Pick one door below — you can always take the other later.
 
-So this is not a conventional software project, and it is not only a single formal theory. It is a layered document system: part protocol corpus, part systems archive, part research and exploration space.
+| I want… | Go here first |
+|--------|-----------------|
+| **Runnable demos, σ, BSC, `make check-v16`** | [**Creation OS README →**](creation-os/README.md) |
+| **The invariant story (`1 = 1`, protocol core)** | [`protocol_core/core/1=1.md`](protocol_core/core/1=1.md) → [`protocol_core/canons/CANON_INDEX.md`](protocol_core/canons/CANON_INDEX.md) |
+| **A map of the whole archive** | [`docs/INDEX.md`](docs/INDEX.md) · [`docs/REPO_MAP.md`](docs/REPO_MAP.md) |
 
-## What Spektre v1.1 Is Within This Repository
+```mermaid
+flowchart LR
+  A[You are here] --> B{What pulls you?}
+  B -->|Shippable C + tests| C[creation-os/README.md]
+  B -->|Formal protocol| D[protocol_core/core/1=1.md]
+  B -->|Big picture| E[docs/INDEX.md]
+```
 
-`Spektre v1.1` is the protocol core.
+---
 
-It defines the strongest invariant layer of the repository:
+# Spektre repository
 
-- `1 = 1` as the cross-cutting consistency constraint
-- state before interpretation
-- explicit ownership before action
-- commitment as irreversible transition
-- human responsibility as non-delegable
+Conceptual archive of the **Spektre ecosystem**. Center of gravity: **Spektre v1.1** — a formal state-first protocol (invariants, boundaries, state ownership, commitment, responsibility). The tree is wider: system models, execution logic, human-layer documents, AI / substrate-boundary material, essays, explorations, and preserved archives.
 
-That layer now lives primarily in `protocol_core/` and `formal_structure/`.
+## What Spektre v1.1 is here
 
-The rest of the repository is not noise around the protocol. It is the wider idea-space in which the protocol is clarified, tested against domains, extended into models, applied to human conditions, or preserved as exploratory and archival material.
+The strongest invariant layer:
 
-## What Else This Repository Contains
+- **`1 = 1`** as cross-cutting consistency
+- **State before interpretation**
+- **Explicit ownership before action**
+- **Commitment as irreversible transition**
+- **Human responsibility as non-delegable**
 
-Beyond the protocol core, the repository includes:
+Primary homes: `protocol_core/` and `formal_structure/`. The rest is **idea-space** around that core — not noise.
 
-- formal and architectural framing of state-space and system logic
-- execution-layer documents about gateways, filters, control, runtime, and stabilization
-- human-layer texts on regulation, recovery, integration, relationships, trauma, and meaning
-- AI/interface material on AGI, LLMs, substrate differences, and human-tool boundaries
-- applied protocol modules for transitions, silence, repair, and action gating
-- essays that extend the invariant language into health, learning, economy, infrastructure, and culture
-- exploratory documents that remain useful but are not part of the smallest canonical nucleus
-- archival material that preserves older, parallel, historical, or speculative branches
+## What else lives here
 
-## Repository Structure
+- Formal and architectural framing of state-space and system logic  
+- Execution-layer docs (gateways, filters, control, runtime, stabilization)  
+- Human-layer texts (regulation, recovery, integration, relationships, trauma, meaning)  
+- AI / interface material (AGI framing, LLMs, substrate differences, human–tool boundaries)  
+- Applied protocol modules, essays by domain, explorations, archival strata  
 
-The repository is organized by layer rather than by chronology.
+## Repository structure (by layer)
 
-- `protocol_core/`: canonical core, canons, invariants, and reference boundaries
-- `formal_structure/`: formalism, architecture, state-space, limits, and system models
-- `execution_system/`: kernel, engine, gateway, filter, diagnostics, and runtime logic
-- `human_layer/`: regulation, recovery, integration, relationships, and meaning
-- `ai_interface/`: AGI, model behavior, substrate comparison, and human-tool boundary texts
-- `applied_protocols/`: practical protocol modules and transition patterns
-- `essays/`: domain-extension texts, now grouped by theme
-- `explorations/`: conceptual, symbolic, social, and systems-adjacent exploratory documents
-- `archive/`: legacy, parallel, speculative, and preserved historical material
-- `docs/`: navigation, maps, reading paths, diagrams, and reorganization summaries
+| Layer | Path |
+|-------|------|
+| Canonical core | `protocol_core/` |
+| Formalism & architecture | `formal_structure/` |
+| Kernel, engine, gateway, diagnostics | `execution_system/` |
+| Regulation, recovery, meaning | `human_layer/` |
+| Model behavior & boundaries | `ai_interface/` |
+| Practical modules | `applied_protocols/` |
+| Themed essays | `essays/` |
+| Exploratory material | `explorations/` |
+| Preserved history | `archive/` |
+| Navigation & maps | `docs/` |
 
-## Essay Domains
+## Essay domains
 
-The essay layer is now internally grouped into:
+`essays/health_biology/` · `essays/learning_work/` · `essays/economy_access/` · `essays/culture_society/` · `essays/infrastructure_environment/`
 
-- `essays/health_biology/`
-- `essays/learning_work/`
-- `essays/economy_access/`
-- `essays/culture_society/`
-- `essays/infrastructure_environment/`
+## True entry canon (ten documents)
 
-This makes the broader applied layer easier to navigate without collapsing it into the protocol core.
+If you only open **ten** files, make them these:
 
-## True Entry Canon
+1. `protocol_core/canons/CANON_INDEX.md`  
+2. `protocol_core/core/1=1.md`  
+3. `protocol_core/core/PROTOCOL.md`  
+4. `protocol_core/core/UNITY.md`  
+5. `protocol_core/core/SOVEREIGN_AGENCY.md`  
+6. `protocol_core/core/STATE_BEFORE_INTERPRETATION.md`  
+7. `protocol_core/core/STATE_COMMIT.md`  
+8. `formal_structure/system_models/SYSTEM_OVERVIEW.md`  
+9. `execution_system/core/SUPERKERNEL.md`  
+10. `human_layer/relationships/HUMAN_NETWORK.md`  
 
-If this repository had to be entered through only ten documents, these are the strongest starting points:
+They expose the center of gravity: invariant → protocol → structure → execution → human meaning.
 
-1. `protocol_core/canons/CANON_INDEX.md`
-2. `protocol_core/core/1=1.md`
-3. `protocol_core/core/PROTOCOL.md`
-4. `protocol_core/core/UNITY.md`
-5. `protocol_core/core/SOVEREIGN_AGENCY.md`
-6. `protocol_core/core/STATE_BEFORE_INTERPRETATION.md`
-7. `protocol_core/core/STATE_COMMIT.md`
-8. `formal_structure/system_models/SYSTEM_OVERVIEW.md`
-9. `execution_system/core/SUPERKERNEL.md`
-10. `human_layer/relationships/HUMAN_NETWORK.md`
+## How to read (non-linear)
 
-These ten do not cover the whole repository, but they expose its center of gravity: invariant, protocol, structure, execution, and human meaning-preservation.
-
-## How To Read This Repository
-
-Do not try to read it as a linear book.
-Read it by entry layer.
-
-If you want the protocol nucleus first:
-
-- start with `protocol_core/canons/CANON_INDEX.md`
-- continue into `protocol_core/core/`
-- then read `formal_structure/`
-
-If you want the systems view first:
-
-- start with `formal_structure/system_models/SYSTEM_OVERVIEW.md`
-- continue into `formal_structure/formalism/`
-- then read `execution_system/`
-
-If you want the human layer first:
-
-- start with `human_layer/relationships/HUMAN_NETWORK.md`
-- continue into `human_layer/regulation/`, `human_layer/integration/`, and `human_layer/meaning/`
-
-If you want a repository-level map first:
-
-- read `docs/INDEX.md`
-- then `docs/REPO_MAP.md`
-- then `docs/READING_PATH.md`
+- **Protocol nucleus:** `protocol_core/canons/CANON_INDEX.md` → `protocol_core/core/` → `formal_structure/`  
+- **Systems view:** `formal_structure/system_models/SYSTEM_OVERVIEW.md` → `formal_structure/formalism/` → `execution_system/`  
+- **Human layer first:** `human_layer/relationships/HUMAN_NETWORK.md` → `human_layer/regulation/` · `integration/` · `meaning/`  
+- **Repo map first:** [`docs/INDEX.md`](docs/INDEX.md) → [`docs/REPO_MAP.md`](docs/REPO_MAP.md) → [`docs/READING_PATH.md`](docs/READING_PATH.md)  
 
 ## Creation OS (software kernel)
 
-This archive also contains the **Creation OS** portable C reference kernel (binary spatter codes, `make check`, measured cost-shape table). Entry points:
+Portable **C11** reference: binary spatter codes, `make check`, measured cost-shape where documented. **Entry:** [creation-os/README.md](creation-os/README.md) · [COMMON_MISREADINGS](creation-os/docs/COMMON_MISREADINGS.md) · [CLAIM_DISCIPLINE](creation-os/docs/CLAIM_DISCIPLINE.md).
 
-- [creation-os/README.md](creation-os/README.md) — problem statement, build, limits
-- [creation-os/docs/COMMON_MISREADINGS.md](creation-os/docs/COMMON_MISREADINGS.md) — frequent misinterpretations and corrections
-- [creation-os/docs/CLAIM_DISCIPLINE.md](creation-os/docs/CLAIM_DISCIPLINE.md) — evidence classes and merge rules for numbers
+## Orientation notes
 
-## Orientation Notes
+- Earlier protocol-centered root README: `protocol_core/reference/README_SPEKTRE_V1_1.md`  
+- Canonical and exploratory documents are **both** retained on purpose  
+- Structure goal: **layers visible** without collapsing the idea-space  
 
-- The previous protocol-centered root `README.md` was preserved as `protocol_core/reference/README_SPEKTRE_V1_1.md`.
-- Canonical and exploratory documents are both intentionally retained.
-- The purpose of the current structure is not reduction or cleanup for its own sake.
-- The purpose is to make the layers visible without collapsing the idea-space.
+---
+
+<p align="center">
+  <b>Spektre Labs</b> · invariant first · <a href="creation-os/README.md">Creation OS</a> inside
+</p>

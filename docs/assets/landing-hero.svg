@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="t d">
+  <title id="t">Spektre  protocol archive and Creation OS</title>
+  <desc id="d">Dark gradient banner with 1 equals 1 and layer hints</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#050a14"/>
+      <stop offset="45%" style="stop-color:#0c1830"/>
+      <stop offset="100%" style="stop-color:#0a2048"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" style="stop-color:#1e50a0;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#3d7af0;stop-opacity:0.35"/>
+      <stop offset="100%" style="stop-color:#1e50a0;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="360" fill="url(#bg)"/>
+  <rect width="1200" height="360" fill="url(#glow)"/>
+  <g opacity="0.12" stroke="#4a7ad4" stroke-width="1" fill="none">
+    <path d="M0 120 L1200 80 M0 240 L1200 200 M200 0 L160 360 M600 0 L520 360 M1000 0 L880 360"/>
+  </g>
+  <text x="600" y="158" text-anchor="middle" font-family="ui-sans-serif,system-ui,sans-serif" font-size="82" font-weight="700" fill="#1e50a0" opacity="0.45">1 = 1</text>
+  <text x="600" y="155" text-anchor="middle" font-family="ui-sans-serif,system-ui,sans-serif" font-size="78" font-weight="700" fill="#f4f8ff">1 = 1</text>
+  <text x="600" y="210" text-anchor="middle" font-family="ui-sans-serif,system-ui,sans-serif" font-size="22" fill="#8fb4e8" letter-spacing="0.08em">SPEKTRE ù STATE-FIRST PROTOCOL ù CREATION OS KERNEL</text>
+  <text x="600" y="255" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="15" fill="#6a90c8">protocol_core ù formal_structure ù execution_system ù human_layer ù creation-os/</text>
+  <rect x="40" y="300" width="1120" height="3" fill="url(#glow)" opacity="0.6"/>
+</svg>

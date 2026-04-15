@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="assets/landing-hero.svg" width="92%" alt="Spektre — 1 = 1"/>
+</p>
+
+> **Navigation hub.** You probably want either the [**Creation OS kernel**](../creation-os/README.md) (compile + self-tests) or the [**protocol core**](../protocol_core/canons/CANON_INDEX.md) (formal invariants). Everything below maps the archive.
+
 # INDEX
 
 ## Distribution (Spektre Labs on GitHub)
