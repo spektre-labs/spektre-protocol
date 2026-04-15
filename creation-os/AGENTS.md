@@ -27,6 +27,7 @@ Guidance for autonomous coding tools (Cursor, Copilot, etc.) working **in this t
 ## Navigation
 
 - Full doc map: [docs/DOC_INDEX.md](docs/DOC_INDEX.md)
+- **RTL / formal / silicon mirror:** [docs/RTL_SILICON_MIRROR.md](docs/RTL_SILICON_MIRROR.md) — after `rtl/*.sv` edits run **`make formal-rtl-lint`**; for CI parity run **`make stack-ultimate`** and **`make rust-iron-lint`**; with **YosysHQ OSS CAD Suite** locally, **`make stack-singularity`** exercises SBY + EQY (`hw/formal/README.md`).
 - Contributor workflow: [CONTRIBUTING.md](CONTRIBUTING.md)
 - External “superiority” claims must cite [docs/HDC_VSA_ENGINEERING_SUPERIORITY.md](docs/HDC_VSA_ENGINEERING_SUPERIORITY.md) or [docs/EXTERNAL_EVIDENCE_AND_POSITIONING.md](docs/EXTERNAL_EVIDENCE_AND_POSITIONING.md) — never invent paper outcomes not stated there.
 - **Scope:** treat this checkout as **Creation OS only**; kernel PRs and measured claims live here. **Publishing:** [docs/publish_checklist_creation_os.md](docs/publish_checklist_creation_os.md).

@@ -14,7 +14,7 @@ if [[ ! -f creation_os_v2.c ]]; then
   exit 1
 fi
 
-make merge-gate
+make merge-gate && make stack-ultimate && make rust-iron-lint
 
 REMOTE="${CREATION_OS_REMOTE:-https://github.com/spektre-labs/creation-os.git}"
 BRANCH="${CREATION_OS_BRANCH:-main}"

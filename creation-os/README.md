@@ -70,6 +70,8 @@ cc -O2 -I. -o creation_os creation_os_v2.c -lm
 | **Common misreadings (structured corrections)** | [docs/COMMON_MISREADINGS.md](docs/COMMON_MISREADINGS.md) |
 | **Claim discipline (evidence classes)** | [docs/CLAIM_DISCIPLINE.md](docs/CLAIM_DISCIPLINE.md) |
 | **Index (all docs)** | [docs/DOC_INDEX.md](docs/DOC_INDEX.md) |
+| **RTL silicon mirror (SV + Chisel + Yosys + Rust + SBY + EQY)** | [docs/RTL_SILICON_MIRROR.md](docs/RTL_SILICON_MIRROR.md) · `make formal-rtl-lint` · `make stack-ultimate` · `make rust-iron-lint` |
+| **Full stack (formalism → silicon map)** | [docs/FULL_STACK_FORMAL_TO_SILICON.md](docs/FULL_STACK_FORMAL_TO_SILICON.md) |
 | **Canonical Git (only real remote)** | [docs/CANONICAL_GIT_REPOSITORY.md](docs/CANONICAL_GIT_REPOSITORY.md) |
 | **Features & standalone builds (one-page map)** | [docs/FEATURES_AND_STANDALONE_BUILDS.md](FEATURES_AND_STANDALONE_BUILDS.md) |
 | **Contributing** | [CONTRIBUTING.md](CONTRIBUTING.md) |
