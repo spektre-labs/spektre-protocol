@@ -9,12 +9,15 @@ cc -O2 -o creation_os creation_os_v2.c -lm
 
 One file. 1196 lines. 26 modules. Any hardware with a C compiler.
 
+**Drive-by / forum reader?** Start here: [docs/PARADIGM_SNAPSHOT_FOR_DRIVE_BY_READERS.md](docs/PARADIGM_SNAPSHOT_FOR_DRIVE_BY_READERS.md) — why the paradigm *feels* opposite to default ML, what is actually proven, and what is **not** claimed.
+
 -----
 
 ## Documentation hub
 
 | Resource | Link |
 |----------|------|
+| **Paradigm snapshot (ELI5 / link-thread)** | [docs/PARADIGM_SNAPSHOT_FOR_DRIVE_BY_READERS.md](docs/PARADIGM_SNAPSHOT_FOR_DRIVE_BY_READERS.md) |
 | **Index (all docs)** | [docs/DOC_INDEX.md](docs/DOC_INDEX.md) |
 | **Contributing** | [CONTRIBUTING.md](CONTRIBUTING.md) |
 | **Security** | [SECURITY.md](SECURITY.md) |
