@@ -4,7 +4,7 @@ Thank you for improving the kernel, tests, or documentation. **Repository prose 
 
 ## Before you open a PR
 
-1. **Read** [docs/CLAIM_DISCIPLINE.md](docs/CLAIM_DISCIPLINE.md) if your change touches benchmarks, numbers, or comparisons to frontier models.
+1. **Read** [docs/CLAIM_DISCIPLINE.md](docs/CLAIM_DISCIPLINE.md) if your change touches benchmarks, numbers, or comparisons to frontier models. For §7 specifics see [docs/BENCHMARK_PROTOCOL.md](docs/BENCHMARK_PROTOCOL.md); for shared vocabulary see [docs/GLOSSARY.md](docs/GLOSSARY.md).
 2. **Run** from this directory:
    ```bash
    make check

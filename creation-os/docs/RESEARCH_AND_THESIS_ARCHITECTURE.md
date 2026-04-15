@@ -172,6 +172,8 @@ Dual licensing (AGPL + commercial) is documented in **README** and **COMMERCIAL_
 | Per-section evidence class (§1–§26) | [MODULE_EVIDENCE_INDEX.md](MODULE_EVIDENCE_INDEX.md) |
 | LaTeX bibliography | [CITATION.bib](CITATION.bib) (and [CITATION.cff](../CITATION.cff) for CFF-aware tools) |
 | Industry / robotics alignment (public themes, bounded claims) | [COHERENCE_RECEIPTS_INDUSTRY_ALIGNMENT.md](COHERENCE_RECEIPTS_INDUSTRY_ALIGNMENT.md) |
+| Shared vocabulary | [GLOSSARY.md](GLOSSARY.md) |
+| §7 benchmark audit trail | [BENCHMARK_PROTOCOL.md](BENCHMARK_PROTOCOL.md) |
 
 ---
 

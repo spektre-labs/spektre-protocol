@@ -12,7 +12,7 @@
 | 4 | Soul + Crystal Lock | **Lab demo (C)** | stdout “§4 SOUL + CRYSTAL LOCK” |
 | 5 | Proconductor | **Lab demo (C)** | stdout “§5 PROCONDUCTOR” |
 | 6 | JEPA World Model | **Lab demo (C)** | stdout “§6 JEPA”; see forbidden merge #3 |
-| 7 | GEMM vs BSC Benchmark | **Measured (microbench)** + **Arithmetic** | `make bench` / §7 stdout; README ratio table |
+| 7 | GEMM vs BSC Benchmark | **Measured (microbench)** + **Arithmetic** | `make bench` / §7 stdout; README ratio table; full protocol [BENCHMARK_PROTOCOL.md](BENCHMARK_PROTOCOL.md) |
 | 8 | Genesis | **Lab demo (C)** (+ printed conservation) | stdout “§8 GENESIS”; not QFT claim |
 | 9 | Metacognition | **Lab demo (C)** | stdout “§9 METACOGNITION” |
 | 10 | Emotional Memory | **Lab demo (C)** | stdout “§10 EMOTIONAL MEMORY” |
