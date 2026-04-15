@@ -107,6 +107,14 @@ If you want a repository-level map first:
 - then `docs/REPO_MAP.md`
 - then `docs/READING_PATH.md`
 
+## Creation OS (software kernel)
+
+This archive also contains the **Creation OS** portable C reference kernel (binary spatter codes, `make check`, measured cost-shape table). Entry points:
+
+- [creation-os/README.md](creation-os/README.md) — problem statement, build, limits
+- [creation-os/docs/COMMON_MISREADINGS.md](creation-os/docs/COMMON_MISREADINGS.md) — frequent misinterpretations and corrections
+- [creation-os/docs/CLAIM_DISCIPLINE.md](creation-os/docs/CLAIM_DISCIPLINE.md) — evidence classes and merge rules for numbers
+
 ## Orientation Notes
 
 - The previous protocol-centered root `README.md` was preserved as `protocol_core/reference/README_SPEKTRE_V1_1.md`.
