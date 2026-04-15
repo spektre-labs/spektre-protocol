@@ -19,6 +19,26 @@ Confirm `LICENSE`, `README.md`, and `docs/` read the way you want on GitHub’s 
 
 ---
 
+## 2a. One-step publish (recommended on your Mac)
+
+From **this directory** (where `creation_os_v2.c` lives), with GitHub credentials working (`gh auth login` or SSH):
+
+```bash
+make publish-github
+```
+
+Optional environment variables:
+
+| Variable | Default | Meaning |
+|----------|---------|---------|
+| `CREATION_OS_REMOTE` | `https://github.com/spektre-labs/creation-os.git` | Clone / push URL (use `git@github.com:spektre-labs/creation-os.git` for SSH) |
+| `CREATION_OS_BRANCH` | `main` | Branch to update |
+| `CREATION_OS_COMMIT_MSG` | `Publish portable Creation OS tree` | Commit message on the **creation-os** repo |
+
+The script runs **`make check`**, clones **creation-os**, **rsync**s this tree (excluding `.git`), commits if there are changes, and **`git push`**.
+
+---
+
 ## 2. Push when this folder is already the git root
 
 `origin` → `https://github.com/spektre-labs/creation-os.git`:

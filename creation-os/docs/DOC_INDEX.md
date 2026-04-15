@@ -16,7 +16,7 @@ Single entry point for humans and automation. **All committed prose here is Engl
 | [REPRO_BUNDLE_TEMPLATE.md](REPRO_BUNDLE_TEMPLATE.md) | Anyone publishing numbers | Archive checklist for microbench + harness rows |
 | [ANALYSIS.md](ANALYSIS.md) | Full-stack readers | Planes A–C, parity program, frontier tables (optional paths as forward references) |
 | [VISUAL_INDEX.md](VISUAL_INDEX.md) | Decks, teachers | SVG figures + Mermaid notes |
-| [publish_checklist_creation_os.md](publish_checklist_creation_os.md) | Maintainers | Push **this** tree to **creation-os** `main` — checklist only |
+| [publish_checklist_creation_os.md](publish_checklist_creation_os.md) | Maintainers | Push **this** tree to **creation-os** `main` — checklist + `make publish-github` |
 | [MLX_GUIDE.md](MLX_GUIDE.md) | MLX integrators | Python / MLX paths where applicable |
 | [cursor_briefing_creation_os.md](cursor_briefing_creation_os.md) | Cursor users | Editor integration notes |
 | [cursor_integration_creation_os.md](cursor_integration_creation_os.md) | Cursor users | Deeper integration |

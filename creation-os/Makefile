@@ -5,7 +5,7 @@ CFLAGS = -O2 -march=native -Wall -std=c11
 LDFLAGS = -lm
 BUILDDIR = .build
 
-.PHONY: help standalone core oracle bench physics test check all clean
+.PHONY: help standalone core oracle bench physics test check all clean publish-github
 
 $(BUILDDIR):
 	mkdir -p $(BUILDDIR)
@@ -16,6 +16,7 @@ help:
 	@echo "  standalone — build creation_os from creation_os_v2.c"
 	@echo "  test       — run tests/test_bsc_core (sigma, Noether, crystal)"
 	@echo "  check      — standalone + test (use before PR / CI)"
+	@echo "  publish-github — rsync this tree → fresh creation-os clone + push main (needs auth)"
 	@echo "  bench      — GEMM vs BSC microbench (host-dependent throughput)"
 	@echo "  oracle     — oracle_speaks, oracle_ultimate"
 	@echo "  physics    — genesis, qhdc"
@@ -57,3 +58,6 @@ all: standalone oracle bench physics test
 
 clean:
 	rm -rf $(BUILDDIR) creation_os oracle_speaks oracle_ultimate gemm_vs_bsc genesis qhdc test_bsc
+
+publish-github:
+	@bash tools/publish_to_creation_os_github.sh
