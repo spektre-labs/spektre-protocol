@@ -1,8 +1,8 @@
 # INDEX
 
-## Distribution (Creation OS)
+## Distribution (Spektre Labs on GitHub)
 
-Public GitHub target is **`spektre-labs/creation-os` only** — see [`DISTRIBUTION_AND_REMOTES.md`](DISTRIBUTION_AND_REMOTES.md).
+Three active repositories — **creation-os** (kernel), **spektre-protocol** (conceptual archive), **corpus** (papers). Roles and push hygiene: [`DISTRIBUTION_AND_REMOTES.md`](DISTRIBUTION_AND_REMOTES.md).
 
 ## True Entry Canon
 

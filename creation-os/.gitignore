@@ -1,0 +1,10 @@
+.build/
+creation_os
+oracle_speaks
+oracle_ultimate
+gemm_vs_bsc
+genesis
+qhdc
+test_bsc
+.DS_Store
+*.o

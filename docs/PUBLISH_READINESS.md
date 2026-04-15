@@ -35,7 +35,7 @@ Use this before **public release**, **investor-facing freeze**, or **press**. Ch
 | ☐ | Item |
 |---|------|
 | ☐ | [`ANALYSIS.md`](../ANALYSIS.md) (and benchmark JSON) distinguish **measured** vs **cited** vs **roadmap**; numbers match committed artefacts. |
-| ☐ | **No dependency** on deprecated GitHub org URLs for `corpus` / `spektre-protocol` remotes — public story is **`creation-os` only** ([`DISTRIBUTION_AND_REMOTES.md`](DISTRIBUTION_AND_REMOTES.md)). External paper links (DOI / arXiv) may still be cited where appropriate. |
+| ☐ | **Three-repo story** matches reality ([`DISTRIBUTION_AND_REMOTES.md`](DISTRIBUTION_AND_REMOTES.md), portable [`REPOS_AND_ROLES.md`](https://github.com/spektre-labs/creation-os/blob/main/docs/REPOS_AND_ROLES.md)): **creation-os** = kernel shipping; **corpus** = papers/DOIs; **spektre-protocol** = conceptual archive. Links to corpus and protocol **work** where you intend navigation — kernel **gitops** still default to **creation-os**. |
 
 ---
 

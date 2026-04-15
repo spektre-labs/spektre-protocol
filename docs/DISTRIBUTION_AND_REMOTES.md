@@ -1,25 +1,28 @@
 # Distribution and GitHub remotes (Spektre Labs)
 
-## Canonical public repository
+## Three repositories — all active, different jobs
 
-**The only GitHub product repository in active use for Creation OS distribution is:**
+| Repository | Role |
+|------------|------|
+| **[spektre-labs/creation-os](https://github.com/spektre-labs/creation-os)** | **Kernel & portable Creation OS engineering** — `creation_os_v2.c`, tests, benchmarks, CI, evidence-class docs. **Default git target** when shipping Creation OS **code**. |
+| **[spektre-labs/spektre-protocol](https://github.com/spektre-labs/spektre-protocol)** | **Spektre v1.1 conceptual archive** — layered markdown system (`protocol_core/`, `formal_structure/`, human layer, essays, `docs/` maps). **Not** the place to land a mistaken “whole kernel tree” push meant for creation-os. |
+| **[spektre-labs/corpus](https://github.com/spektre-labs/corpus)** | **Open theory corpus** — CC BY 4.0 papers, Zenodo DOIs, README index. **Bibliographic** home; not the CI surface for the C reference kernel. |
 
-**https://github.com/spektre-labs/creation-os**
+None of the three is “deprecated”. Confusion comes from **pushing the wrong artifact to the wrong remote** — not from the existence of the repos.
 
-Commits, releases, CI, and public issue flow for the Creation OS kernel and its portable tree belong **there**.
+## Git hygiene (Creation OS engineers)
 
-## Not used for distribution
+- **Creation OS code / kernel docs / `make check` CI** → **`creation-os`**.
+- **Protocol canon + formal archive edits** → **`spektre-protocol`**.
+- **Paper metadata + corpus README** → **`corpus`**.
 
-Do **not** treat these as active distribution or dependency targets for Creation OS work:
+If your local checkout is a **monorepo** that contains multiple trees, set **remotes explicitly** (`origin` vs `creation-os`) before `git push`.
 
-- `https://github.com/spektre-labs/spektre-protocol` (and similar “protocol” monorepo URLs)
-- `https://github.com/spektre-labs/corpus`
+## Canonical map for agents
 
-They must not appear in READMEs, checklists, or automation as **required** links for shipping Creation OS. If historical prose elsewhere mentions them, treat that as **archival** unless explicitly re-approved.
-
-## This checkout
-
-This directory may still be a **local** monorepo or mixed tree for authoring. That does **not** change the rule above: **push public Creation OS changes only to `spektre-labs/creation-os`.**
+See the portable copy shipped with the kernel:  
+**[creation-os/docs/REPOS_AND_ROLES.md](https://github.com/spektre-labs/creation-os/blob/main/docs/REPOS_AND_ROLES.md)**  
+(in this monorepo: `creation-os/docs/REPOS_AND_ROLES.md` when that directory is present).
 
 ---
 

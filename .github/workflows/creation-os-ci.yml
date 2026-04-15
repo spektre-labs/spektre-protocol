@@ -1,0 +1,24 @@
+name: creation-os CI
+
+on:
+  push:
+    paths:
+      - 'creation-os/**'
+      - '.github/workflows/creation-os-ci.yml'
+  pull_request:
+    paths:
+      - 'creation-os/**'
+      - '.github/workflows/creation-os-ci.yml'
+
+defaults:
+  run:
+    working-directory: creation-os
+
+jobs:
+  c11-linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Structural build and tests
+        run: make check
