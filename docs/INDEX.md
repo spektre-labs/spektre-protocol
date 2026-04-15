@@ -1,5 +1,9 @@
 # INDEX
 
+## Distribution (Creation OS)
+
+Public GitHub target is **`spektre-labs/creation-os` only** — see [`DISTRIBUTION_AND_REMOTES.md`](DISTRIBUTION_AND_REMOTES.md).
+
 ## True Entry Canon
 
 If you want the strongest ten-document entry set for the whole repository, start here:
