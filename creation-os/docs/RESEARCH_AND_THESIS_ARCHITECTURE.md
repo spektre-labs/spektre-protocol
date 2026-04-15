@@ -163,4 +163,14 @@ Dual licensing (AGPL + commercial) is documented in **README** and **COMMERCIAL_
 
 ---
 
+## 11. Pre-defense and submission gates
+
+| Gate | Document |
+|------|----------|
+| Hostile review simulation (category errors, toys, physics, repro, license) | [ADVERSARIAL_REVIEW_CHECKLIST.md](ADVERSARIAL_REVIEW_CHECKLIST.md) |
+| Per-section evidence class (§1–§26) | [MODULE_EVIDENCE_INDEX.md](MODULE_EVIDENCE_INDEX.md) |
+| LaTeX bibliography | [CITATION.bib](CITATION.bib) (and [CITATION.cff](../CITATION.cff) for CFF-aware tools) |
+
+---
+
 *Spektre Labs · Creation OS · 2026 · English research prose — maintain with CLAIM_DISCIPLINE invariants.*
