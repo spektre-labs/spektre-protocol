@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # Publish this portable Creation OS directory to https://github.com/spektre-labs/creation-os
 # Requires working GitHub auth (SSH key, or HTTPS + credential, or: gh auth login).
+#
+# CANONICAL REPO ONLY: spektre-labs/creation-os. Do not point a parent monorepo's git remote
+# here; see docs/CANONICAL_GIT_REPOSITORY.md.
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -11,7 +14,7 @@ if [[ ! -f creation_os_v2.c ]]; then
   exit 1
 fi
 
-make check && make check-v6 && make check-v7 && make check-v9 && make check-v10
+make check && make check-v6 && make check-v7 && make check-v9 && make check-v10 && make check-v11 && make check-v12 && make check-v15 && make check-v16
 
 REMOTE="${CREATION_OS_REMOTE:-https://github.com/spektre-labs/creation-os.git}"
 BRANCH="${CREATION_OS_BRANCH:-main}"
@@ -27,10 +30,16 @@ if ! git clone --branch "$BRANCH" "$REMOTE" "$STAGE/repo" 2>/dev/null; then
 fi
 
 rsync -a --delete --exclude '.git' "$ROOT/" "$STAGE/repo/"
+
+# Never ship macOS Finder duplicate paths ("name 2.ext" / "name 2/").
+# rsync --delete alone does not remove receiver-only junk reliably with excludes;
+# prune explicitly in the staging clone (not in the working tree).
+find "$STAGE/repo" -depth \( -name '* 2.*' -o -name '* 2' \) ! -path '*/.git/*' -print0 2>/dev/null | xargs -0 rm -rf || true
+
 cd "$STAGE/repo"
 
 # Never ship local Makefile binaries (rsync ignores .git only; artifacts may exist on disk).
-for bin in creation_os creation_os_v6 creation_os_v7 creation_os_v9 creation_os_v10 test_bsc gemm_vs_bsc coherence_gate_batch hv_agi_gate_neon oracle_speaks oracle_ultimate genesis qhdc; do
+for bin in creation_os creation_os_v6 creation_os_v7 creation_os_v9 creation_os_v10 creation_os_v11 creation_os_v12 creation_os_v15 creation_os_v16 test_bsc gemm_vs_bsc coherence_gate_batch hv_agi_gate_neon oracle_speaks oracle_ultimate genesis qhdc; do
   rm -f "$bin"
 done
 rm -rf .build
