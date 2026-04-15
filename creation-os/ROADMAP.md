@@ -40,5 +40,5 @@ Format: checkbox, name, one line. These are **not** the §9–§26 demos above; 
 - [ ] **CI matrix** — macOS + Linux, `make all`, artifact upload  
 - [ ] **Fuzz σ codec** — libFuzzer on `encode_text`  
 - [ ] **Bench regression gate** — store `trials_per_sec_*` baselines  
-- [ ] **Docs Zenodo link** — corpus DOI in README when live  
+- [ ] **Docs Zenodo link** — Zenodo DOI in README when live  
 - [ ] **Release signing** — tags + checksums on GitHub Releases  

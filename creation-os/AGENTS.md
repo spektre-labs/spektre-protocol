@@ -24,7 +24,7 @@ Guidance for autonomous coding tools (Cursor, Copilot, etc.) working **in this t
 - Full doc map: [docs/DOC_INDEX.md](docs/DOC_INDEX.md)
 - Contributor workflow: [CONTRIBUTING.md](CONTRIBUTING.md)
 - External “superiority” claims must cite [docs/HDC_VSA_ENGINEERING_SUPERIORITY.md](docs/HDC_VSA_ENGINEERING_SUPERIORITY.md) or [docs/EXTERNAL_EVIDENCE_AND_POSITIONING.md](docs/EXTERNAL_EVIDENCE_AND_POSITIONING.md) — never invent paper outcomes not stated there.
-- **Three repos:** [docs/REPOS_AND_ROLES.md](docs/REPOS_AND_ROLES.md) — do not conflate **creation-os** (kernel PRs) with **corpus** (papers) or **spektre-protocol** (conceptual archive).
+- **Scope:** treat this checkout as **Creation OS only**; kernel PRs and measured claims live here. **Publishing:** [docs/publish_checklist_creation_os.md](docs/publish_checklist_creation_os.md).
 
 ---
 

@@ -22,24 +22,17 @@ One file. 1196 lines. 26 modules. Any hardware with a C compiler.
 | **Repro bundle template (cite numbers)** | [docs/REPRO_BUNDLE_TEMPLATE.md](docs/REPRO_BUNDLE_TEMPLATE.md) |
 | **HDC / VSA literature → engineering map** | [docs/HDC_VSA_ENGINEERING_SUPERIORITY.md](docs/HDC_VSA_ENGINEERING_SUPERIORITY.md) |
 | **Figures & SVG index** | [docs/VISUAL_INDEX.md](docs/VISUAL_INDEX.md) |
-| **Three GitHub repos (roles)** | [docs/REPOS_AND_ROLES.md](docs/REPOS_AND_ROLES.md) |
-| **Monorepo → creation-os push** | [docs/PUBLISH_FROM_MONOREPO.md](docs/PUBLISH_FROM_MONOREPO.md) |
+| **Push / release checklist (this repo only)** | [docs/publish_checklist_creation_os.md](docs/publish_checklist_creation_os.md) |
+| **Cursor briefing** | [docs/cursor_briefing_creation_os.md](docs/cursor_briefing_creation_os.md) |
+| **Cursor integration** | [docs/cursor_integration_creation_os.md](docs/cursor_integration_creation_os.md) |
 
 **On this page:** [Problem](#the-problem) · [Measured results](#measured-results-4096-dimensions-100k-trials) · [BSC](#what-is-bsc) · [Invariants](#verified-invariants) · [26 modules](#26-modules) · [Architecture](#architecture) · [Build](#build) · [Limitations](#limitations) · [Demonstrates](#what-this-demonstrates) · [Theory](#theoretical-foundation) · [Why it wins](#why-this-wins-where-it-matters-engineering-not-slogans) · [AGI map](#agi-map-how-this-file-relates-to-the-full-stack) · [Paradigm shift](#paradigm-shift-what-changes--quoted-discipline) · [Receipts roadmap](#road-from-this-readme-to-production-receipts) · [Publication-hard](#publication-hard-what-that-phrase-means-here) · [License](#license)
 
 -----
 
-## Spektre Labs on GitHub (three repositories)
+## Product repository
 
-All three are **active**; each has a **different job** — see **[docs/REPOS_AND_ROLES.md](docs/REPOS_AND_ROLES.md)**.
-
-| Repository | One-line role |
-|------------|----------------|
-| **[spektre-labs/creation-os](https://github.com/spektre-labs/creation-os)** | **This tree** — portable kernel, `make test` / `make bench`, CI, engineering docs. |
-| **[spektre-labs/spektre-protocol](https://github.com/spektre-labs/spektre-protocol)** | **Conceptual archive** — Spektre v1.1, `protocol_core/`, formal structure, essays, layered navigation. |
-| **[spektre-labs/corpus](https://github.com/spektre-labs/corpus)** | **Open papers** — CC BY 4.0, Zenodo DOIs, corpus README as the bibliographic spine. |
-
-If you author in a **monorepo**, use **[docs/PUBLISH_FROM_MONOREPO.md](docs/PUBLISH_FROM_MONOREPO.md)** so kernel changes land on **creation-os**, not the protocol remote by mistake.
+**[spektre-labs/creation-os](https://github.com/spektre-labs/creation-os)** — this tree is the portable kernel, `make test` / `make bench`, CI, and engineering docs. **Push hygiene:** [docs/publish_checklist_creation_os.md](docs/publish_checklist_creation_os.md).
 
 -----
 
@@ -258,11 +251,9 @@ This is a research prototype. Specific limitations:
 
 ## Theoretical foundation
 
-**Papers & DOIs** (~80, CC BY 4.0): [Zenodo community](https://zenodo.org/communities/spektre-labs/) · **[spektre-labs/corpus](https://github.com/spektre-labs/corpus)** (README + [`papers/`](https://github.com/spektre-labs/corpus/tree/main/papers)).
+**Papers & DOIs** (~80, CC BY 4.0): [Zenodo community — Spektre Labs](https://zenodo.org/communities/spektre-labs/).
 
-**Conceptual archive** (Spektre v1.1, layered navigation): **[spektre-labs/spektre-protocol](https://github.com/spektre-labs/spektre-protocol)**.
-
-This **creation-os** repo holds the **portable kernel** and measured claims; corpus and protocol are **sibling** repositories — see **[docs/REPOS_AND_ROLES.md](docs/REPOS_AND_ROLES.md)**.
+This repository holds the **portable kernel** and measured claims; theory citations and uploads are anchored on **Zenodo** under that community.
 
 - Paradigm: Distortion Theory of Intelligence
 - Core: `K(t) = ρ·I_Φ·F`, `Keff = (1−σ)·K`, `1=1` invariant
@@ -271,19 +262,19 @@ This **creation-os** repo holds the **portable kernel** and measured claims; cor
 
 **Why the HDC line matters now (literature-backed, no hype):** **[docs/HDC_VSA_ENGINEERING_SUPERIORITY.md](docs/HDC_VSA_ENGINEERING_SUPERIORITY.md)** — Ma & Jiao (2022) HDC vs neural trade-offs; Aygun et al. (2023) encoding survey; Springer AIR HDC classification review (2025); Yeung et al. (2025) robustness estimation; FAISS Hamming / popcount precedent — each row mapped to **evidence class** vs **this repo’s demos**.
 
-**Extended narrative:** full three-plane map (llama.cpp + Spektre, MLX, native M4), evidence classes (harness vs microbench vs lab demo), AGI `cos_*` batches, and publication gates — **[docs/ANALYSIS.md](docs/ANALYSIS.md)** (synced from the Spektre Protocol tree; same technical story as this README, with file-level anchors). **Claim discipline (what you may merge in one headline):** **[docs/CLAIM_DISCIPLINE.md](docs/CLAIM_DISCIPLINE.md)**.
+**Extended narrative:** full three-plane map (llama.cpp + superkernel, MLX, native M4), evidence classes (harness vs microbench vs lab demo), AGI `cos_*` batches, and publication gates — **[docs/ANALYSIS.md](docs/ANALYSIS.md)** (same technical story as this README, with file-level anchors; some paths are forward references when optional trees are not on disk). **Claim discipline (what you may merge in one headline):** **[docs/CLAIM_DISCIPLINE.md](docs/CLAIM_DISCIPLINE.md)**.
 
 -----
 
 ## Why this wins where it matters (engineering, not slogans)
 
-**One geometry for coherence.** In the Spektre map (see ANALYSIS), σ / Hamming / POPCOUNT is the same language for kernel state, GDA codebooks, oracle prediction, JEPA energy, and native receipt fields. That reduces “coherence as vibes across ten tools” to **one measurable quantity** you can gate on before spending GPU on a full forward pass.
+**One geometry for coherence.** In the Creation OS map (see ANALYSIS), σ / Hamming / POPCOUNT is the same language for kernel state, GDA codebooks, oracle prediction, JEPA energy, and native receipt fields. That reduces “coherence as vibes across ten tools” to **one measurable quantity** you can gate on before spending GPU on a full forward pass.
 
 **Cost shape.** The reference benchmark is explicit: for the **same 4096-bit task shape**, the GEMM path pays **24,576 multiply-add style FLOPs** in the proxy used here; the BSC path pays **128 bit-ops** (XOR + POPCOUNT per word lane). Memory drops **32×** for the two vectors in the harness (`16 KiB` vs `512 B`). Throughput gap is **measured** (`make bench`); the headline **192×** ops and **32×** RAM are **not** host-dependent — they come from the chosen `D` and `W`.
 
 **Checkable structure.** §8 shows XOR-sum conservation after symmetric interactions; §4 / §26 show tamper sensitivity on identity chains. That is a different failure mode than silent numeric drift in an unconstrained float pipeline: you get **discrete, replayable** violations.
 
-**Deployment surface.** `creation_os_v2.c` is **stdlib + libm only** — no framework, no CUDA graph, no Python import tax for the teaching kernel. The same algebra is what later wires into Spektre’s native / MLX / llama paths; this file is the **portable proof** you can ship to any reviewer who can run `cc`.
+**Deployment surface.** `creation_os_v2.c` is **stdlib + libm only** — no framework, no CUDA graph, no Python import tax for the teaching kernel. The same algebra is what later wires into native / MLX / llama paths; this file is the **portable proof** you can ship to any reviewer who can run `cc`.
 
 **AGI-relevant boundary.** This single file does **not** claim benchmark parity with frontier chat models. It **does** show that a broad slice of cognitive primitives (metacognition, ToM, moral compromise, consensus, sleep consolidation, …) can live in **one** small C program built only from XOR / MAJ / POPCOUNT — which is the point of the **26-module** layout: **composition under one algebra**, not a second hidden stack.
 
@@ -299,7 +290,7 @@ The **production** Creation OS stack (Planes A–C in ANALYSIS) adds, without re
 
 | Plane | Role (summary) |
 |-------|------------------|
-| **A — llama.cpp + Spektre** | GEMM inference stays here; SK8 superkernel + GDA bridge steer logits and masks with σ / Hamming paths. |
+| **A — llama.cpp + superkernel** | GEMM inference stays here; SK8 superkernel + GDA bridge steer logits and masks with σ / Hamming paths. |
 | **B — MLX / Python** | Orchestration, receipts, harness vs native evaluation modes, ARC / policy tooling. |
 | **C — native M4 dylib** | NEON σ batches, optional Metal living weights, dispatcher — `cos_agi*` / `cos_mega*` style primitives for receipts and audits. |
 

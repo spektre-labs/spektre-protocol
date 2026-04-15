@@ -21,4 +21,4 @@ Repository: [spektre-labs/creation-os](https://github.com/spektre-labs/creation-
 
 ## Publishing
 
-Copy this `creation-os/` directory to the GitHub repo root (or extend your monorepo `push-to-creation-os.sh` to include it), then push `main`.
+Use [publish_checklist_creation_os.md](publish_checklist_creation_os.md): verify `make check`, then push **this** tree to **creation-os** `main`.

@@ -14,13 +14,12 @@ Single entry point for humans and automation. **All committed prose here is Engl
 | [EXTERNAL_EVIDENCE_AND_POSITIONING.md](EXTERNAL_EVIDENCE_AND_POSITIONING.md) | Papers, investors | Kanerva / VSA survey / lm-eval anchors |
 | [HDC_VSA_ENGINEERING_SUPERIORITY.md](HDC_VSA_ENGINEERING_SUPERIORITY.md) | Strategy, decks | Literature-backed HDC vs NN trade-offs + FAISS Hamming note + repo bridge |
 | [REPRO_BUNDLE_TEMPLATE.md](REPRO_BUNDLE_TEMPLATE.md) | Anyone publishing numbers | Archive checklist for microbench + harness rows |
-| [ANALYSIS.md](ANALYSIS.md) | Full-stack readers | Planes A–C, parity program, frontier tables (synced monorepo narrative) |
+| [ANALYSIS.md](ANALYSIS.md) | Full-stack readers | Planes A–C, parity program, frontier tables (optional paths as forward references) |
 | [VISUAL_INDEX.md](VISUAL_INDEX.md) | Decks, teachers | SVG figures + Mermaid notes |
-| [REPOS_AND_ROLES.md](REPOS_AND_ROLES.md) | Everyone | **creation-os** vs **spektre-protocol** vs **corpus** — three active repos, three jobs |
-| [PUBLISH_FROM_MONOREPO.md](PUBLISH_FROM_MONOREPO.md) | Maintainers | Copy `creation-os/` → **creation-os** remote without hitting **spektre-protocol** `origin` by mistake |
+| [publish_checklist_creation_os.md](publish_checklist_creation_os.md) | Maintainers | Push **this** tree to **creation-os** `main` — checklist only |
 | [MLX_GUIDE.md](MLX_GUIDE.md) | MLX integrators | Python / MLX paths where applicable |
-| [CURSOR_BRIEFING.md](CURSOR_BRIEFING.md) | Cursor users | Editor integration notes |
-| [CURSOR_INTEGRATION_GUIDE.md](CURSOR_INTEGRATION_GUIDE.md) | Cursor users | Deeper integration |
+| [cursor_briefing_creation_os.md](cursor_briefing_creation_os.md) | Cursor users | Editor integration notes |
+| [cursor_integration_creation_os.md](cursor_integration_creation_os.md) | Cursor users | Deeper integration |
 
 **Quick verify:** from repository root of this tree, `make check` (build + structural tests).
 

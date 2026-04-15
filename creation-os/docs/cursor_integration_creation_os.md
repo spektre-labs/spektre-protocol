@@ -1,4 +1,4 @@
-# Integration guide
+# Integration guide — Creation OS
 
 ## C
 
@@ -15,4 +15,4 @@ Split objects: `make core` → `.build/*.o`. Link your host binary with those ob
 
 ## MLX (optional)
 
-MLX bridges live outside this minimal C repo. If you combine them, keep buffer ownership explicit and avoid redundant host copies; see internal `mlx_creation_os/` in the wider Spektre workspace.
+MLX bridges live outside this minimal C repository. If you combine them, keep buffer ownership explicit and avoid redundant host copies; wire optional Python/MLX paths only where you control the full runtime.
