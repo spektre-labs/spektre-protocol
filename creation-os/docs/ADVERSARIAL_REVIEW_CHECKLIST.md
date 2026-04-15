@@ -62,7 +62,16 @@ Use this as a **pre-submission** gate for papers, theses, and public posts that 
 
 ---
 
-## G. What still legitimately needs *your* extra work
+## G. “We solve the same problems as [frontier lab]” without evidence
+
+| Attack | Safe response |
+|--------|----------------|
+| “This repo replaces [named org]’s safety stack.” | It does not. See [COHERENCE_RECEIPTS_INDUSTRY_ALIGNMENT.md](COHERENCE_RECEIPTS_INDUSTRY_ALIGNMENT.md) scope boundary; claims stay on **this tree’s** artifacts. |
+| “Named companies validate our roadmap.” | **Illustrative public themes only** — no implied partnership; cite their papers separately if needed. |
+
+---
+
+## H. What still legitimately needs *your* extra work
 
 - Held-out evaluation for any module you want to claim **generalizes** beyond the toy.  
 - Harness runs with archived configs for any **frontier comparison**.  
@@ -71,4 +80,4 @@ Use this as a **pre-submission** gate for papers, theses, and public posts that 
 
 ---
 
-*Spektre Labs · Creation OS · 2026 · Pair with [MODULE_EVIDENCE_INDEX.md](MODULE_EVIDENCE_INDEX.md) for per-section evidence classes.*
+*Spektre Labs · Creation OS · 2026 · Pair with [MODULE_EVIDENCE_INDEX.md](MODULE_EVIDENCE_INDEX.md) and [COHERENCE_RECEIPTS_INDUSTRY_ALIGNMENT.md](COHERENCE_RECEIPTS_INDUSTRY_ALIGNMENT.md).*

@@ -14,6 +14,7 @@ Single entry point for humans and automation. **All committed prose here is Engl
 | [ADVERSARIAL_REVIEW_CHECKLIST.md](ADVERSARIAL_REVIEW_CHECKLIST.md) | Authors before submit | Hostile reviewer attacks ↔ in-repo answers |
 | [MODULE_EVIDENCE_INDEX.md](MODULE_EVIDENCE_INDEX.md) | Thesis writers | §1–§26 → evidence class + artifact |
 | [CITATION.bib](CITATION.bib) | LaTeX users | BibTeX entries + CFF cross-reference |
+| [COHERENCE_RECEIPTS_INDUSTRY_ALIGNMENT.md](COHERENCE_RECEIPTS_INDUSTRY_ALIGNMENT.md) | Strategy, robotics, safety | Public-theme industry challenges → receipt geometry; explicit non-claims |
 | [CLAIM_DISCIPLINE.md](CLAIM_DISCIPLINE.md) | Authors, reviewers | Evidence classes, forbidden merges, falsifiers |
 | [EXTERNAL_EVIDENCE_AND_POSITIONING.md](EXTERNAL_EVIDENCE_AND_POSITIONING.md) | Papers, investors | Kanerva / VSA survey / lm-eval anchors |
 | [HDC_VSA_ENGINEERING_SUPERIORITY.md](HDC_VSA_ENGINEERING_SUPERIORITY.md) | Strategy, decks | Literature-backed HDC vs NN trade-offs + FAISS Hamming note + repo bridge |

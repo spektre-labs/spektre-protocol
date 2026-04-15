@@ -159,7 +159,8 @@ Dual licensing (AGPL + commercial) is documented in **README** and **COMMERCIAL_
 6. **Systems architecture** — Planes A–C from **ANALYSIS**; optional trees as future work.  
 7. **Evaluation ethics** — evidence ladder, forbidden merges, harness vs native.  
 8. **Reproducibility** — bundle template + CI.  
-9. **Conclusion** — what is proven vs hypothesized; open problems from **ROADMAP**.
+9. **Conclusion** — what is proven vs hypothesized; open problems from **ROADMAP**.  
+10. **(Optional) Industry-scale challenges** — public narratives only: [COHERENCE_RECEIPTS_INDUSTRY_ALIGNMENT.md](COHERENCE_RECEIPTS_INDUSTRY_ALIGNMENT.md).
 
 ---
 
@@ -170,6 +171,7 @@ Dual licensing (AGPL + commercial) is documented in **README** and **COMMERCIAL_
 | Hostile review simulation (category errors, toys, physics, repro, license) | [ADVERSARIAL_REVIEW_CHECKLIST.md](ADVERSARIAL_REVIEW_CHECKLIST.md) |
 | Per-section evidence class (§1–§26) | [MODULE_EVIDENCE_INDEX.md](MODULE_EVIDENCE_INDEX.md) |
 | LaTeX bibliography | [CITATION.bib](CITATION.bib) (and [CITATION.cff](../CITATION.cff) for CFF-aware tools) |
+| Industry / robotics alignment (public themes, bounded claims) | [COHERENCE_RECEIPTS_INDUSTRY_ALIGNMENT.md](COHERENCE_RECEIPTS_INDUSTRY_ALIGNMENT.md) |
 
 ---
 
