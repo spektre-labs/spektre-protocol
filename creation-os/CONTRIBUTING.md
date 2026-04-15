@@ -1,6 +1,6 @@
 # Contributing to Creation OS (`creation-os`)
 
-Thank you for improving the kernel, tests, or documentation. **Repository prose is English-only** (issues and PR descriptions may use other languages if your team agrees; **merged docs stay English**).
+Thank you for improving the kernel, tests, or documentation. **All committed material is English only** — see [docs/LANGUAGE_POLICY.md](docs/LANGUAGE_POLICY.md). Thread-level FAQ for misreads: [docs/COMMON_MISREADINGS.md](docs/COMMON_MISREADINGS.md).
 
 ## Before you open a PR
 

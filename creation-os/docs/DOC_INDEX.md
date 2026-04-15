@@ -6,6 +6,8 @@ Single entry point for humans and automation. **All committed prose here is Engl
 |----------|----------|---------|
 | [README.md](../README.md) | Everyone | Problem, measured table, BSC primer, invariants, build, limitations, theory links |
 | [PARADIGM_SNAPSHOT_FOR_DRIVE_BY_READERS.md](PARADIGM_SNAPSHOT_FOR_DRIVE_BY_READERS.md) | Forum / social traffic | Plain-language paradigm contrast + honest non-claims |
+| [LANGUAGE_POLICY.md](LANGUAGE_POLICY.md) | Everyone | English-only rule for committed repo |
+| [COMMON_MISREADINGS.md](COMMON_MISREADINGS.md) | Forum / reviewers | Table of viral wrong takes → one-line fix + link |
 | [ROADMAP.md](../ROADMAP.md) | Maintainers | Shipped vs planned; links to discipline docs |
 | [CHANGELOG.md](../CHANGELOG.md) | Release readers | Versioned user-visible changes |
 | [CONTRIBUTING.md](../CONTRIBUTING.md) | Contributors | Build, PR hygiene, license headers |

@@ -1,6 +1,6 @@
 ## Summary
 
-<!-- What changed and why (English for merged commits). -->
+<!-- What changed and why — **English** for all merged prose per docs/LANGUAGE_POLICY.md -->
 
 ## Claim hygiene (required if touching benchmarks, README numbers, or frontier comparisons)
 
@@ -16,3 +16,7 @@
 ## Terms (optional)
 
 - [ ] New jargon links to [docs/GLOSSARY.md](../docs/GLOSSARY.md) or defines once in README/docs.
+
+## Language
+
+- [ ] All new **committed** markdown and maintainer-facing comments are **English only** ([docs/LANGUAGE_POLICY.md](../docs/LANGUAGE_POLICY.md)).

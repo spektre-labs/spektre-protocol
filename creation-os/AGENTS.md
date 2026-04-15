@@ -4,8 +4,8 @@ Guidance for autonomous coding tools (Cursor, Copilot, etc.) working **in this t
 
 ## Language
 
-- **Committed files:** English only (`README.md`, `docs/*.md`, comments you add for maintainers).
-- Do not introduce Finnish or other non-English text into tracked markdown or source.
+- **Canonical policy:** [docs/LANGUAGE_POLICY.md](docs/LANGUAGE_POLICY.md) — **English only** for all committed prose and new maintainer-facing comments.
+- Do not introduce non-English technical documentation into tracked markdown or source.
 
 ## Evidence hygiene (non-negotiable)
 

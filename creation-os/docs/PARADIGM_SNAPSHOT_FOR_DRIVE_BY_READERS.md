@@ -75,6 +75,8 @@ That is rarer than it should be in ML repos — and it is why this project can f
 
 If your Reddit take skips the limitations section, you are not describing this repo — you are describing a fanfic version of it.
 
+**Wrong take bingo:** [COMMON_MISREADINGS.md](COMMON_MISREADINGS.md) — copy-paste corrections with links.
+
 ---
 
 ## Where to go after the dopamine wears off

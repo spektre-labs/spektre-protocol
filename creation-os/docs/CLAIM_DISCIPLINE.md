@@ -2,6 +2,8 @@
 
 **Purpose:** make every sentence in READMEs, papers, and investor decks **survive cross-examination** — not by louder adjectives, but by **binding claims to evidence classes** and **forbidding known failure modes** (mixed baselines, silent precision drift, demo-as-harness).
 
+**Repository language:** all committed prose is **English only** — [LANGUAGE_POLICY.md](LANGUAGE_POLICY.md).
+
 ---
 
 ## 1. Evidence classes (never merge without a wall)
