@@ -1,0 +1,21 @@
+name: link health
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    name: internal-link ratchet
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: No NEW broken internal links (baseline ratchet)
+        run: python3 tools/check_links.py
