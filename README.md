@@ -1,3 +1,15 @@
+<div align="center">
+
+# SPEKTRE LABS
+
+**1 = 1**
+
+*Industrial dark-luxury minimalism × mathematically-perfect-symmetric mythical Atlantean cybernetics. State before interpretation — invariant first.*
+
+</div>
+
+---
+
 <p align="center">
   <img src="docs/assets/landing-hero.svg" width="100%" alt="Spektre — 1 = 1 · protocol archive · Creation OS kernel"/>
 </p>
@@ -10,7 +22,7 @@
 
 ---
 
-> **Landed from Reddit (or anywhere else)?** Read this once: this monorepo is **not** “yet another ML wrapper.” It is **(A)** a formal **state-first protocol** (*Spektre v1.1* — invariants, ownership, commitment) and **(B)** a **portable C kernel** inside [`creation-os/`](creation-os/README.md) where **`1 = 1` is enforced in code**, not vibes. Pick one door below — you can always take the other later.
+> **Landed from Reddit (or anywhere else)?** Read this once: this monorepo is **not** "yet another ML wrapper." It is **(A)** a formal **state-first protocol** (*Spektre v1.1* — invariants, ownership, commitment) and **(B)** a **portable C kernel** inside [`creation-os/`](creation-os/README.md) where **`1 = 1` is enforced in code**, not vibes. Pick one door below — you can always take the other later.
 
 | I want… | Go here first |
 |--------|-----------------|
@@ -120,3 +132,11 @@ Portable **C11** reference: binary spatter codes, `make check`, measured cost-sh
 <p align="center">
   <b>Spektre Labs</b> · invariant first · <a href="creation-os/README.md">Creation OS</a> inside
 </p>
+
+---
+
+<div align="center">
+
+Part of Spektre Labs · spektrelabs.org · 1=1
+
+</div>
